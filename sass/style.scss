@@ -1,0 +1,69 @@
+@import './mixin.scss';
+
+$bgColor1:  #f9fefd;
+$bgColor2: #f15e24;
+$bgColor3:  #febe00;
+$color: #939293;
+$myWidth: auto;
+$myHeight: auto;
+
+.bg{
+    background-color: $bgColor1;
+    max-width: 865px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.top1{
+    @include border;
+    background-color: $bgColor2
+}
+.img1{
+    @include border;
+    background: url('../image/blog-02.jpg') no-repeat;
+    width: 244px;
+    height: 165px;
+}
+.btom1{
+    @include text;
+    @include border;
+    background-color: $bgColor3;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        height: 166px;
+        // border-left: 2px solid red;
+        left: 87%;
+        width: 2px;
+        top: 45px;
+        background-color: black;
+    }
+}
+.btom1-end{
+    @include text;
+    @include border;
+    background-color: $bgColor3;
+}
+.btom2{
+    @include border;
+}
+.text1{
+    @include text;
+    font-size: 15px;
+    width: $myWidth;
+    height: $myHeight;
+}
+.para1{
+    font-weight: normal;
+    color: $color;
+}
+.fond{
+    @include border;
+    @include fontAwesome;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 50px;
+}
+.svg-inline--fa.fa-w-20 {
+    width: 50px;
+}

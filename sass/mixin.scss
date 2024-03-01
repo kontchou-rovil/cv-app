@@ -1,0 +1,28 @@
+@mixin border {
+    border: 2px solid #372414;
+    border-bottom: 5px solid #372414;
+    border-radius: 10px;
+}
+
+@mixin text {
+    width: 245px;
+    height: 50px;
+    color: #140000;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize; 
+}
+@mixin fontAwesome {
+    font-size: 35px;
+    background-color: $bgColor2;
+    color: white;
+    border-radius: 5px;
+    margin-top: -3px;
+}
+@mixin line {
+    border-left: 2px solid #372414;
+    height: 200px;
+    position: absolute;
+    top: 291px;
+    right: 133px;
+}
